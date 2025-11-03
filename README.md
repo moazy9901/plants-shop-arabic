@@ -1,4 +1,4 @@
-# Plant-Nursery-Website
-Plant-Nursery-Website
+# Plant-arabic-Website
+Alwakeel-Plant-shop
 
-## Demo: https://areebghani.github.io/Plant-Nursery-Website/
+## Demo: https://moazy9901.github.io/plants-shop-arabic/index.html
