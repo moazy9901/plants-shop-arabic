@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <style>
+        /* إصلاح اتجاه السلايدر أو الفيديوهات عند استخدام RTL */
+        .owl-carousel,
+        .hero-area,
+        .video-section {
+            direction: ltr !important; /* الحفاظ على عرض السلايدر والفيديو بشكل صحيح */
+            text-align: right !important; /* النصوص تبقى بالعربية */
+        }
+
+        .hero-slides-content {
+            direction: rtl !important; /* ترجمة النصوص فقط */
+        }
+
+        .top-header-area,
+        .header-area,
+        .classynav ul,
+        .classynav {
+            direction: rtl !important; /* اتجاه القوائم */
+            text-align: right !important;
+        }
+        </style>
+
+    <!-- Title -->
+    <title>Alazea - Gardening &amp; Landscaping HTML Template</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="preloader-circle"></div>
+        <div class="preloader-img">
+            <img src="img/core-img/leaf.png" alt="">
+        </div>
+    </div>
+
+    <!-- ##### Header Area Start ##### -->
+ <header class="header-area">
+
+        <!-- ***** الهيدر العلوي ***** -->
+        <div class="top-header-area">
+            <p class="font-weight-bold text-center text-white pt-2">مركز مستلزمات الحدائق والمشاتل</p>
+        </div>
+
+        <!-- ***** شريط التنقل ***** -->
+        <div class="alazea-main-menu">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- القائمة -->
+                    <nav class="classy-navbar justify-content-between" id="alazeaNav">
+
+                        <!-- الشعار -->
+                        <a href="index.html" class="nav-brand"><img src="img/core-img/mylogo.png" style="padding-top: 10%; width: 150px;" alt="شعار الوكيل"></a>
+
+                        <!-- زر القائمة للجوال -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- القائمة الرئيسية -->
+                        <div class="classy-menu">
+                            <!-- زر الإغلاق -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- بداية الروابط -->
+                            <div class="classynav">
+                                <ul>
+                                    <li><a href="index.html">الرئيسية</a></li>
+                                    <li><a href="about.html">من نحن</a></li>
+                                    <li><a href="#" class="me-2"> الصفحات </a>
+                                        <ul class="dropdown">
+                                            <li><a href="index.html">الرئيسية</a></li>
+                                            <li><a href="about.html">من نحن</a></li>
+                                            <li><a href="shop.html" class="me-2">المتجر</a>
+                                                <ul class="dropdown">
+                                                    <li><a href="shop.html">المتجر</a></li>
+                                                    <li><a href="shop-details.html">تفاصيل المنتج</a></li>
+                                                    <li><a href="cart.html">سلة المشتريات</a></li>
+                                                    <li><a href="checkout.html">إتمام الشراء</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="portfolio.html" class="me-2">أعمالنا</a>
+                                                <ul class="dropdown">
+                                                    <li><a href="portfolio.html">أعمالنا</a></li>
+                                                    <li><a href="single-portfolio.html">تفاصيل العمل</a></li>
+                                                </ul>
+                                            </li>
+                                             
+                                            <li><a href="contact.html">تواصل معنا</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="shop.html">المتجر</a></li>
+                                    <li><a href="portfolio.html">أعمالنا</a></li>
+                                    <li><a href="contact.html">تواصل معنا</a></li>
+                                </ul>
+
+                            </div>
+                            
+                            <!-- نهاية الروابط -->
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+    <!-- ##### Breadcrumb Area Start ##### -->
+    <div class="breadcrumb-area">
+        <!-- Top Breadcrumb Area -->
+        <div class="top-breadcrumb-area bg-img bg-overlay d-flex align-items-center justify-content-center" style="background-image: url(img/bg-img/24.jpg);">
+            <h2 class="p-3" style="border-bottom-style: dashed;">معرض أعمالنا</h2>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html"><i class="fa fa-home"></i> الرئيسية</a></li>
+                            <li class="active" aria-current="page"> <span class="px-1"> / </span> معرض أعمالنا</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ##### Breadcrumb Area End ##### -->
+
+    <!-- ##### Portfolio Area Start ##### -->
+   <section class="alazea-portfolio-area section-padding-100-0" style="direction: rtl; text-align: right;">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <!-- عنوان القسم -->
+                <div class="section-heading text-center">
+                    <h2>معرض أعمالنا</h2>
+                    <p>نضع خبرتنا وجهودنا في ابتكار تصاميم فريدة وجذابة</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="alazea-portfolio-filter">
+                    <div class="portfolio-filter text-center">
+                        <button class="btn active" data-filter="*">الكل</button>
+                        <button class="btn" data-filter=".design">حدائق منزلية</button>
+                        <button class="btn" data-filter=".garden">نباتات الزينة</button>
+                        <button class="btn" data-filter=".home-design">ديكور نباتي </button>
+                        <button class="btn" data-filter=".office-design"> زينة مكتبية</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row alazea-portfolio">
+
+            <!-- مشروع 1 -->
+            <div class="col-12 col-sm-6 col-lg-3 single_portfolio_item design home-design wow fadeInUp" data-wow-delay="100ms">
+                <div class="portfolio-thumbnail bg-img" style="background-image: url(img/bg-img/16.jpg);"></div>
+                <div class="portfolio-hover-overlay">
+                    <a href="img/bg-img/16.jpg" class="portfolio-img d-flex align-items-center justify-content-center" title="المعرض 1">
+                        <div class="port-hover-text">
+                            <h3>متجر زهور عصري</h3>
+                            <h5>نباتات مكتبية</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- مشروع 2 -->
+            <div class="col-12 col-sm-6 col-lg-3 single_portfolio_item garden wow fadeInUp" data-wow-delay="200ms">
+                <div class="portfolio-thumbnail bg-img" style="background-image: url(img/bg-img/17.jpg);"></div>
+                <div class="portfolio-hover-overlay">
+                    <a href="img/bg-img/17.jpg" class="portfolio-img d-flex align-items-center justify-content-center" title="المعرض 2">
+                        <div class="port-hover-text">
+                            <h3>حديقة طبيعية متكاملة</h3>
+                            <h5>تصميم المناظر</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- مشروع 3 -->
+            <div class="col-12 col-sm-6 col-lg-3 single_portfolio_item garden design wow fadeInUp" data-wow-delay="300ms">
+                <div class="portfolio-thumbnail bg-img" style="background-image: url(img/bg-img/18.jpg);"></div>
+                <div class="portfolio-hover-overlay">
+                    <a href="img/bg-img/18.jpg" class="portfolio-img d-flex align-items-center justify-content-center" title="المعرض 3">
+                        <div class="port-hover-text">
+                            <h3>تصميم حديقة منزلية</h3>
+                            <h5>نباتات الزينة</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- مشروع 4 -->
+            <div class="col-12 col-sm-6 col-lg-3 single_portfolio_item garden office-design wow fadeInUp" data-wow-delay="400ms">
+                <div class="portfolio-thumbnail bg-img" style="background-image: url(img/bg-img/19.jpg);"></div>
+                <div class="portfolio-hover-overlay">
+                    <a href="img/bg-img/19.jpg" class="portfolio-img d-flex align-items-center justify-content-center" title="المعرض 4">
+                        <div class="port-hover-text">
+                            <h3>تصميم مكتب حديث</h3>
+                            <h5>نباتات داخلية</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- مشروع 5 -->
+            <div class="col-12 col-sm-6 col-lg-3 single_portfolio_item design office-design wow fadeInUp" data-wow-delay="100ms">
+                <div class="portfolio-thumbnail bg-img" style="background-image: url(img/bg-img/20.jpg);"></div>
+                <div class="portfolio-hover-overlay">
+                    <a href="img/bg-img/20.jpg" class="portfolio-img d-flex align-items-center justify-content-center" title="المعرض 5">
+                        <div class="port-hover-text">
+                            <h3>تصميم مقهى فاخر</h3>
+                            <h5>تصميم داخلي طبيعي</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- مشروع 6 -->
+            <div class="col-12 col-sm-6 col-lg-3 single_portfolio_item garden wow fadeInUp" data-wow-delay="200ms">
+                <div class="portfolio-thumbnail bg-img" style="background-image: url(img/bg-img/21.jpg);"></div>
+                <div class="portfolio-hover-overlay">
+                    <a href="img/bg-img/21.jpg" class="portfolio-img d-flex align-items-center justify-content-center" title="المعرض 6">
+                        <div class="port-hover-text">
+                            <h3>تصميم حديقة فاخرة</h3>
+                            <h5>نباتات طبيعية</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- مشروع 7 -->
+            <div class="col-12 col-lg-6 single_portfolio_item home-design wow fadeInUp" data-wow-delay="300ms">
+                <div class="portfolio-thumbnail bg-img" style="background-image: url(img/bg-img/22.jpg);"></div>
+                <div class="portfolio-hover-overlay">
+                    <a href="img/bg-img/22.jpg" class="portfolio-img d-flex align-items-center justify-content-center" title="المعرض 7">
+                        <div class="port-hover-text">
+                            <h3>تصميم منزل عصري</h3>
+                            <h5>زخرفة نباتية</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+    <!-- ##### Portfolio Area End ##### -->
+
+    <!-- ##### Footer Area Start ##### -->
+   <footer class="footer-area bg-img text-white" 
+        style="background-image: url('img/bg-img/3.jpg'); background-size: cover; background-position: center; direction: rtl; text-align: right;">
+
+    <!-- المنطقة الرئيسية للفوتر -->
+    <div class="main-footer-area py-5" style="background: rgba(0,0,0,0.6);">
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- ويدجت الفوتر الأولى -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-footer-widget">
+                        <div class="footer-logo mb-3 text-center">
+                            <a href="#"><img src="img/core-img/mylogo.png" alt="شعار الموقع" style="max-width: 12rem"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- روابط سريعة -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-footer-widget">
+                        <h5 class="mb-3 fw-bold">روابط سريعة</h5>
+                        <ul class="list-unstyled" style="line-height: 2;">
+                            <li><a href="#" class="text-white text-decoration-none">الرئيسية</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">خدماتنا</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">منتجاتنا</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">معرض الصور</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">اتصل بنا</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- المنتجات الأكثر مبيعًا -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-footer-widget">
+                        <h5 class="mb-3 fw-bold">الأكثر مبيعًا</h5>
+
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="img/bg-img/4.jpg" alt="منتج" style="width: 60px; height: 60px; border-radius: 6px; margin-left: 10px;">
+                            <div>
+                                <a href="#" class="text-white text-decoration-none d-block">نبتة الصبار</a>
+                                <small class="text-success">$9.99</small>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center">
+                            <img src="img/bg-img/5.jpg" alt="منتج" style="width: 60px; height: 60px; border-radius: 6px; margin-left: 10px;">
+                            <div>
+                                <a href="#" class="text-white text-decoration-none d-block">زهرة التوليب</a>
+                                <small class="text-success">$11.99</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- معلومات الاتصال -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-footer-widget">
+                        <h5 class="mb-3 fw-bold">تواصل معنا</h5>
+                        <ul class="list-unstyled" style="line-height: 2;">
+                            <li><i class="fas fa-map-marker-alt text-success ms-2"></i> القليوبية – طريق شبين القناطر - امام المعهد الديني</li>
+                            <li><i class="fas fa-phone-alt text-success ms-2"></i> +20 100 073 1991</li>
+                            <li><i class="fas fa-envelope text-success ms-2"></i> alwkeel6524@gmail.com</li>
+                            <li><i class="fas fa-clock text-success ms-2"></i> يوميًا من 9 صباحًا حتى 9 مساءً</li>
+                        </ul>
+                    </div>
+                </div>
+        <div class="text-center single-footer-widget">
+                <p style="font-size: 15px; line-height: 1.8;">
+                           نحن مركز متخصص في مستلزمات الحدائق والمشاتل، نقدم نباتات طبيعية، أدوات زراعة، وأنظمة ري حديثة
+                            <br>لمساعدتك على إنشاء حديقة منزلية جميلة ومريحة.
+                        </p>
+                        <div class="social-info mt-3 text-center">
+                            <a href="#" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-white mx-2"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#" class="text-white mx-2"><i class="fab fa-youtube"></i></a>
+                        </div>
+            </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- المنطقة السفلية للفوتر -->
+    <div class="footer-bottom-area text-center py-3" style="background: rgba(0,0,0,0.8); font-size: 14px;">
+        <div class="container">
+            <p class="mb-0">جميع الحقوق محفوظة © 2025 <span class="text-success fw-bold">مركز مستلزمات الحدائق والمشاتل</span></p>
+        </div>
+    </div>
+</footer>
+    <!-- ##### Footer Area End ##### -->
+
+    <!-- ##### All Javascript Files ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+</body>
+
+</html>

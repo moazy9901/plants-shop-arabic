@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <style>
+        /* إصلاح اتجاه السلايدر أو الفيديوهات عند استخدام RTL */
+        .owl-carousel,
+        .hero-area,
+        .video-section {
+            direction: ltr !important; /* الحفاظ على عرض السلايدر والفيديو بشكل صحيح */
+            text-align: right !important; /* النصوص تبقى بالعربية */
+        }
+
+        .hero-slides-content {
+            direction: rtl !important; /* ترجمة النصوص فقط */
+        }
+
+        .top-header-area,
+        .header-area,
+        .classynav ul,
+        .classynav {
+            direction: rtl !important; /* اتجاه القوائم */
+            text-align: right !important;
+        }
+        </style>
+
+    <!-- Title -->
+    <title>Alazea - Gardening &amp; Landscaping HTML Template</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="preloader-circle"></div>
+        <div class="preloader-img">
+            <img src="img/core-img/leaf.png" alt="">
+        </div>
+    </div>
+
+    <!-- ##### Header Area Start ##### -->
+ <header class="header-area">
+
+        <!-- ***** الهيدر العلوي ***** -->
+        <div class="top-header-area">
+            <p class="font-weight-bold text-center text-white pt-2">مركز مستلزمات الحدائق والمشاتل</p>
+        </div>
+
+        <!-- ***** شريط التنقل ***** -->
+        <div class="alazea-main-menu">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- القائمة -->
+                    <nav class="classy-navbar justify-content-between" id="alazeaNav">
+
+                        <!-- الشعار -->
+                        <a href="index.html" class="nav-brand"><img src="img/core-img/mylogo.png" style="padding-top: 10%; width: 150px;" alt="شعار الوكيل"></a>
+
+                        <!-- زر القائمة للجوال -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- القائمة الرئيسية -->
+                        <div class="classy-menu">
+                            <!-- زر الإغلاق -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- بداية الروابط -->
+                            <div class="classynav">
+                                <ul>
+                                    <li><a href="index.html">الرئيسية</a></li>
+                                    <li><a href="about.html">من نحن</a></li>
+                                    <li><a href="#" class="me-2"> الصفحات </a>
+                                        <ul class="dropdown">
+                                            <li><a href="index.html">الرئيسية</a></li>
+                                            <li><a href="about.html">من نحن</a></li>
+                                            <li><a href="shop.html" class="me-2">المتجر</a>
+                                                <ul class="dropdown">
+                                                    <li><a href="shop.html">المتجر</a></li>
+                                                    <li><a href="shop-details.html">تفاصيل المنتج</a></li>
+                                                    <li><a href="cart.html">سلة المشتريات</a></li>
+                                                    <li><a href="checkout.html">إتمام الشراء</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="portfolio.html" class="me-2">أعمالنا</a>
+                                                <ul class="dropdown">
+                                                    <li><a href="portfolio.html">أعمالنا</a></li>
+                                                    <li><a href="single-portfolio.html">تفاصيل العمل</a></li>
+                                                </ul>
+                                            </li>
+                                             
+                                            <li><a href="contact.html">تواصل معنا</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="shop.html">المتجر</a></li>
+                                    <li><a href="portfolio.html">أعمالنا</a></li>
+                                    <li><a href="contact.html">تواصل معنا</a></li>
+                                </ul>
+
+                            </div>
+                            
+                            <!-- نهاية الروابط -->
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+    <!-- ##### Breadcrumb Area Start ##### -->
+    <div class="breadcrumb-area">
+        <!-- Top Breadcrumb Area -->
+        <div class="top-breadcrumb-area bg-img bg-overlay d-flex align-items-center justify-content-center" style="background-image: url(img/bg-img/24.jpg);">
+            <h2 class="p-3" style="border-bottom-style: dashed;">عربة التسوق</h2>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html"><i class="fa fa-home"></i> الرئيسية</a></li>
+                            <li class="active" aria-current="page"> <span class="px-1"> / </span>عربة التسوق</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ##### Breadcrumb Area End ##### -->
+
+    <!-- ##### Cart Area Start ##### -->
+   <div class="cart-area section-padding-0-100 clearfix">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="cart-table clearfix">
+                    <table class="table table-responsive">
+                        <thead>
+                            <tr>
+                                <th>المنتجات</th>
+                                <th>الكمية</th>
+                                <th>السعر</th>
+                                <th>الإجمالي</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="cart_product_img">
+                                    <a href="#"><img src="img/bg-img/34.jpg" alt="Product"></a>
+                                    <h5>زهرة الصبار</h5>
+                                </td>
+                                <td class="qty">
+                                    <div class="quantity">
+                                        <span class="qty-minus" onclick="var effect = document.getElementById('qty'); var qty = effect.value; if( !isNaN( qty ) && qty > 1 ) effect.value--;return false;"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                        <input type="number" class="qty-text" id="qty" step="1" min="1" max="99" name="quantity" value="1">
+                                        <span class="qty-plus" onclick="var effect = document.getElementById('qty'); var qty = effect.value; if( !isNaN( qty )) effect.value++;return false;"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                    </div>
+                                </td>
+                                <td class="price"><span>$9.99</span></td>
+                                <td class="total_price"><span>$9.99</span></td>
+                                <td class="action"><a href="#"><i class="icon_close"></i></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <!-- خصم القسيمة -->
+            <div class="col-12 col-lg-6">
+                <div class="coupon-discount mt-70">
+                    <h5>خصم القسيمة</h5>
+                    <p>يمكنك استخدام القسائم داخل عربة التسوق قبل إتمام عملية الدفع. أضف منتجًا مؤهلاً من البائع الذي أنشأ كود القسيمة إلى سلة المشتريات الخاصة بك. ثم اضغط على زر "تطبيق القسيمة" لإضافة الخصم للطلب. سيتم تحديث إجمالي الطلب ليعكس الخصم المطبق.</p>
+                    <form action="#" method="post">
+                        <input type="text" name="coupon-code" placeholder="أدخل كود القسيمة">
+                        <button type="submit">تطبيق القسيمة</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- إجمالي العربة -->
+            <div class="col-12 col-lg-6">
+                <div class="cart-totals-area mt-70">
+                    <h5 class="title--">إجمالي العربة</h5>
+                    <div class="subtotal d-flex justify-content-between">
+                        <h5>الإجمالي الفرعي</h5>
+                        <h5>$9.99</h5>
+                    </div>
+                    <div class="shipping d-flex justify-content-between">
+                        <h5>الشحن</h5>
+                        <div class="shipping-address">
+                            <form action="#" method="post">
+                                <select class="custom-select">
+                                  <option selected>اختر الدولة</option>
+                                  <option value="1">الولايات المتحدة</option>
+                                  <option value="2">لاتفيا</option>
+                                  <option value="3">اليابان</option>
+                                  <option value="4">بنغلاديش</option>
+                                </select>
+                                <input type="text" name="shipping-text" id="shipping-text" placeholder="الولاية/المحافظة">
+                                <input type="text" name="shipping-zip" id="shipping-zip" placeholder="الرمز البريدي">
+                                <button type="submit">تحديث الإجمالي</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="total d-flex justify-content-between">
+                        <h5>الإجمالي</h5>
+                        <h5>$9.99</h5>
+                    </div>
+                    <div class="checkout-btn">
+                        <a href="#" class="btn alazea-btn w-100">الانتقال للدفع</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+    <!-- ##### Cart Area End ##### -->
+
+    <!-- ##### Footer Area Start ##### -->
+  <footer class="footer-area bg-img text-white" 
+        style="background-image: url('img/bg-img/3.jpg'); background-size: cover; background-position: center; direction: rtl; text-align: right;">
+
+    <!-- المنطقة الرئيسية للفوتر -->
+    <div class="main-footer-area py-5" style="background: rgba(0,0,0,0.6);">
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- ويدجت الفوتر الأولى -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-footer-widget">
+                        <div class="footer-logo mb-3 text-center">
+                            <a href="#"><img src="img/core-img/mylogo.png" alt="شعار الموقع" style="max-width: 12rem"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- روابط سريعة -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-footer-widget">
+                        <h5 class="mb-3 fw-bold">روابط سريعة</h5>
+                        <ul class="list-unstyled" style="line-height: 2;">
+                            <li><a href="#" class="text-white text-decoration-none">الرئيسية</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">خدماتنا</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">منتجاتنا</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">معرض الصور</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">اتصل بنا</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- المنتجات الأكثر مبيعًا -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-footer-widget">
+                        <h5 class="mb-3 fw-bold">الأكثر مبيعًا</h5>
+
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="img/bg-img/4.jpg" alt="منتج" style="width: 60px; height: 60px; border-radius: 6px; margin-left: 10px;">
+                            <div>
+                                <a href="#" class="text-white text-decoration-none d-block">نبتة الصبار</a>
+                                <small class="text-success">$9.99</small>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center">
+                            <img src="img/bg-img/5.jpg" alt="منتج" style="width: 60px; height: 60px; border-radius: 6px; margin-left: 10px;">
+                            <div>
+                                <a href="#" class="text-white text-decoration-none d-block">زهرة التوليب</a>
+                                <small class="text-success">$11.99</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- معلومات الاتصال -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-footer-widget">
+                        <h5 class="mb-3 fw-bold">تواصل معنا</h5>
+                        <ul class="list-unstyled" style="line-height: 2;">
+                            <li><i class="fas fa-map-marker-alt text-success ms-2"></i> القليوبية – طريق شبين القناطر - امام المعهد الديني</li>
+                            <li><i class="fas fa-phone-alt text-success ms-2"></i> +20 100 073 1991</li>
+                            <li><i class="fas fa-envelope text-success ms-2"></i> alwkeel6524@gmail.com</li>
+                            <li><i class="fas fa-clock text-success ms-2"></i> يوميًا من 9 صباحًا حتى 9 مساءً</li>
+                        </ul>
+                    </div>
+                </div>
+        <div class="text-center single-footer-widget">
+                <p style="font-size: 15px; line-height: 1.8;">
+                           نحن مركز متخصص في مستلزمات الحدائق والمشاتل، نقدم نباتات طبيعية، أدوات زراعة، وأنظمة ري حديثة
+                            <br>لمساعدتك على إنشاء حديقة منزلية جميلة ومريحة.
+                        </p>
+                        <div class="social-info mt-3 text-center">
+                            <a href="#" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-white mx-2"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#" class="text-white mx-2"><i class="fab fa-youtube"></i></a>
+                        </div>
+            </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- المنطقة السفلية للفوتر -->
+    <div class="footer-bottom-area text-center py-3" style="background: rgba(0,0,0,0.8); font-size: 14px;">
+        <div class="container">
+            <p class="mb-0">جميع الحقوق محفوظة © 2025 <span class="text-success fw-bold">مركز مستلزمات الحدائق والمشاتل</span></p>
+        </div>
+    </div>
+</footer>
+    <!-- ##### Footer Area End ##### -->
+
+    <!-- ##### All Javascript Files ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <style>
+        /* إصلاح اتجاه السلايدر أو الفيديوهات عند استخدام RTL */
+        .owl-carousel,
+        .hero-area,
+        .video-section {
+            direction: ltr !important; /* الحفاظ على عرض السلايدر والفيديو بشكل صحيح */
+            text-align: right !important; /* النصوص تبقى بالعربية */
+        }
+
+        .hero-slides-content {
+            direction: rtl !important; /* ترجمة النصوص فقط */
+        }
+
+        .top-header-area,
+        .header-area,
+        .classynav ul,
+        .classynav {
+            direction: rtl !important; /* اتجاه القوائم */
+            text-align: right !important;
+        }
+        </style>
+
+    <!-- Title -->
+    <title>Alazea - Gardening &amp; Landscaping HTML Template</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="preloader-circle"></div>
+        <div class="preloader-img">
+            <img src="img/core-img/leaf.png" alt="">
+        </div>
+    </div>
+
+    <!-- ##### Header Area Start ##### -->
+ <header class="header-area">
+
+        <!-- ***** الهيدر العلوي ***** -->
+        <div class="top-header-area">
+            <p class="font-weight-bold text-center text-white pt-2">مركز مستلزمات الحدائق والمشاتل</p>
+        </div>
+
+        <!-- ***** شريط التنقل ***** -->
+        <div class="alazea-main-menu">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- القائمة -->
+                    <nav class="classy-navbar justify-content-between" id="alazeaNav">
+
+                        <!-- الشعار -->
+                        <a href="index.html" class="nav-brand"><img src="img/core-img/mylogo.png" style="padding-top: 10%; width: 150px;" alt="شعار الوكيل"></a>
+
+                        <!-- زر القائمة للجوال -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- القائمة الرئيسية -->
+                        <div class="classy-menu">
+                            <!-- زر الإغلاق -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- بداية الروابط -->
+                            <div class="classynav">
+                                <ul>
+                                    <li><a href="index.html">الرئيسية</a></li>
+                                    <li><a href="about.html">من نحن</a></li>
+                                    <li><a href="#" class="me-2"> الصفحات </a>
+                                        <ul class="dropdown">
+                                            <li><a href="index.html">الرئيسية</a></li>
+                                            <li><a href="about.html">من نحن</a></li>
+                                            <li><a href="shop.html" class="me-2">المتجر</a>
+                                                <ul class="dropdown">
+                                                    <li><a href="shop.html">المتجر</a></li>
+                                                    <li><a href="shop-details.html">تفاصيل المنتج</a></li>
+                                                    <li><a href="cart.html">سلة المشتريات</a></li>
+                                                    <li><a href="checkout.html">إتمام الشراء</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="portfolio.html" class="me-2">أعمالنا</a>
+                                                <ul class="dropdown">
+                                                    <li><a href="portfolio.html">أعمالنا</a></li>
+                                                    <li><a href="single-portfolio.html">تفاصيل العمل</a></li>
+                                                </ul>
+                                            </li>
+                                             
+                                            <li><a href="contact.html">تواصل معنا</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="shop.html">المتجر</a></li>
+                                    <li><a href="portfolio.html">أعمالنا</a></li>
+                                    <li><a href="contact.html">تواصل معنا</a></li>
+                                </ul>
+
+                            </div>
+                            
+                            <!-- نهاية الروابط -->
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ##### نهاية منطقة الهيدر ##### -->
+    <!-- ##### Header Area End ##### -->
+
+    <!-- ##### Hero Area Start ##### -->
+   <section class="hero-area vh-100 overflow-hidden" style="direction: rtl; text-align: center;">
+    <div class="hero-post-slides owl-carousel">
+
+        <!-- شريحة ترحيبية -->
+        <div class="single-hero-post bg-overlay">
+            <!-- صورة الخلفية -->
+            <div class="slide-img bg-img" style="background-image: url('img/bg-img/h1.jpg');"></div>
+            <div class="container h-75">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12">
+                        <!-- محتوى الشريحة -->
+                        <div class="hero-slides-content text-center" style="color: #fff;">
+                            <h2 style="font-size: 28px; font-weight: bold;">تنمو النباتات في الضوء والطقس الذي يحيط بها</h2>
+                            <p style="max-width: 700px; margin: 15px auto; font-size: 16px;">
+                                تنمو النباتات وتزدهر بفضل الضوء والبيئة المحيطة بها. فهي تتأقلم مع أشعة الشمس والطقس لتستمر في الحياة والعطاء. الزراعة ليست مجرد نبات، بل تناغم بين الطبيعة والحياة.
+                            </p>
+                            <div class="welcome-btn-group mt-15" style="margin-top: 20px;">
+                                <a href="#" class="btn alazea-btn mr-30" style="background-color: #6ab04c; color: white; padding: 10px 25px; border-radius: 5px; text-decoration: none; margin-left: 10px;">ابدأ الآن</a>
+                                <a href="#" class="btn alazea-btn active" style="background-color: #fff; color: #6ab04c; padding: 10px 25px; border-radius: 5px; text-decoration: none;">تواصل معنا</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- شريحة ترحيبية -->
+        <div class="single-hero-post bg-overlay">
+            <!-- صورة الخلفية -->
+            <div class="slide-img bg-img" style="background-image: url('img/bg-img/header2.jpg'); background-size: cover; background-position: center;"></div>
+            
+            <div class="container h-75">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12">
+                        <!-- محتوى الشريحة -->
+                        <div class="hero-slides-content text-center" style="color: #fff;">
+                            
+                            <h2 style="font-size: 30px; font-weight: bold; line-height: 1.6;">
+                                <br> قم بتحويل مساحتك إلى واحة خضراء نابضة بالحياة
+                            </h2>
+                            
+                            <p style="max-width: 750px; margin: 20px auto; font-size: 17px; line-height: 1.9;">
+                                نوفر كل ما تحتاجه من أدوات الزراعة، وأحواض النباتات، والبذور، وأنظمة الري الحديثة، 
+                                لنساعدك في إنشاء حديقة منزلية جميلة تنعم بالهدوء والطبيعة.  
+                                اجعل من حديقتك مكانًا ينبض بالجمال والراحة.
+                            </p>
+
+                            <div class="welcome-btn-group mt-15" style="margin-top: 25px;">
+                                <a href="#" class="btn alazea-btn mr-30" 
+                                style="background-color: #6ab04c; color: #fff; padding: 12px 30px; border-radius: 6px; text-decoration: none; font-weight: 600;">
+                                اكتشف منتجاتنا
+                                </a>
+                                <a href="#" class="btn alazea-btn active" 
+                                style="background-color: #fff; color: #6ab04c; padding: 12px 30px; border-radius: 6px; text-decoration: none; font-weight: 600;">
+                                تواصل معنا
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <!-- شريحة ترحيبية -->
+        <div class="single-hero-post bg-overlay">
+            <!-- صورة الخلفية -->
+            <div class="slide-img bg-img" style="background-image: url('img/bg-img/header5.jpg');"></div>
+            <div class="container h-75">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12">
+                        <!-- محتوى الشريحة -->
+                        <div class="hero-slides-content text-center" style="color: #fff;">
+                            <h2 style="font-size: 28px; font-weight: bold;">الطبيعة مصدر الحياة والجمال</h2>
+                            <p style="max-width: 700px; margin: 15px auto; font-size: 16px;">
+                                النباتات تمنحنا الهواء النقي والطاقة الإيجابية، وتضفي لمسة من الجمال والسكينة على المكان. اعتنِ بنباتاتك لتعيش حياة مليئة بالحيوية والبهجة.
+                            </p>
+                            <div class="welcome-btn-group mt-15" style="margin-top: 20px;">
+                                <a href="#" class="btn alazea-btn mr-30" style="background-color: #6ab04c; color: white; padding: 10px 25px; border-radius: 5px; text-decoration: none; margin-left: 10px;">ابدأ الآن</a>
+                                <a href="#" class="btn alazea-btn active" style="background-color: #fff; color: #6ab04c; padding: 10px 25px; border-radius: 5px; text-decoration: none;">تواصل معنا</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </section>
+    <!-- ##### Hero Area End ##### -->
+
+    <!-- ##### Service Area Start ##### -->
+<section class="our-services-area bg-gray section-padding-100-0" style="direction: rtl; text-align: right;">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <!-- عنوان القسم -->
+                <div class="section-heading text-center" style="text-align: center;">
+                    <h2 style="font-weight: bold;">خدماتنا</h2>
+                    <p style="font-size: 16px;">نقدم لك الخدمة المثالية التي تبحث عنها.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-between">
+            <div class="col-12 col-lg-5">
+                <div class="alazea-service-area mb-100">
+
+                    <!-- خدمة مفردة -->
+                    <div class="single-service-area d-flex align-items-center wow fadeInUp" data-wow-delay="100ms" style="flex-direction: row-reverse;">
+                        <!-- الأيقونة -->
+                        <div class="service-icon mr-30" style="margin-left: 30px; margin-right: 0;">
+                            <img src="img/core-img/s1.png" alt="رعاية النباتات">
+                        </div>
+                        <!-- المحتوى -->
+                        <div class="service-content">
+                            <h5 style="font-weight: bold;">رعاية النباتات</h5>
+                            <p style="font-size: 15px;">نقدم خدمات متكاملة للعناية بالنباتات والحفاظ على نموها الطبيعي وجمالها داخل المنزل أو الحديقة.</p>
+                        </div>
+                    </div>
+
+                    <!-- خدمة مفردة -->
+                    <div class="single-service-area d-flex align-items-center wow fadeInUp" data-wow-delay="300ms" style="flex-direction: row-reverse;">
+                        <!-- الأيقونة -->
+                        <div class="service-icon mr-30" style="margin-left: 30px; margin-right: 0;">
+                            <img src="img/core-img/s2.png" alt="تنظيف بالضغط العالي">
+                        </div>
+                        <!-- المحتوى -->
+                        <div class="service-content">
+                            <h5 style="font-weight: bold;">تنظيف بالضغط العالي</h5>
+                            <p style="font-size: 15px;">نستخدم أحدث التقنيات لإزالة الأوساخ والأتربة من الأسطح والحدائق والممرات بطريقة فعالة وآمنة.</p>
+                        </div>
+                    </div>
+
+                    <!-- خدمة مفردة -->
+                    <div class="single-service-area d-flex align-items-center wow fadeInUp" data-wow-delay="500ms" style="flex-direction: row-reverse;">
+                        <!-- الأيقونة -->
+                        <div class="service-icon mr-30" style="margin-left: 30px; margin-right: 0;">
+                            <img src="img/core-img/s3.png" alt="خدمة تقليم الأشجار">
+                        </div>
+                        <!-- المحتوى -->
+                        <div class="service-content">
+                            <h5 style="font-weight: bold;">خدمة وتقليم الأشجار</h5>
+                            <p style="font-size: 15px;">نهتم بتقليم الأشجار والعناية بها للحفاظ على شكلها الصحي والجمالي وضمان نموها المتوازن.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-6">
+                <!-- منطقة الفيديو -->
+                <div class="alazea-video-area bg-overlay mb-100" style="direction: ltr; position: relative; text-align: center;">
+                    <img src="img/bg-img/23.jpg" alt="فيديو الخدمات" style="width: 100%; border-radius: 10px;">
+                    <a href="videos/background.mp4" class="video-icon d-flex align-items-center justify-content-center text-decoration-none" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-size: 32px;">
+                        <i class="fa fa-play" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- ##### Service Area End ##### -->
+
+    <!-- ##### About Area Start ##### -->
+  <section class="about-us-area section-padding-100-0" style="direction: rtl; text-align: right;">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-12 col-lg-5">
+                <!-- عنوان القسم -->
+                <div class="section-heading">
+                    <h2>من نحن</h2>
+                    <p>نحن رواد في مجال خدمات النباتات.</p>
+                </div>
+                <p>نحن نقدم أفضل الحلول في مجال النباتات والتصميم الخارجي. نعمل بشغف لتجميل المساحات وجعلها نابضة بالحياة، مع الاهتمام بأدق التفاصيل وجودة التنفيذ.</p>
+
+                <!-- شريط التقدم -->
+                <div class="alazea-progress-bar mb-50">
+                    <!-- شريط واحد -->
+                    <div class="single_progress_bar">
+                        <div class="d-flex justify-content-between ps-5">
+                        <p>نباتات المكاتب</p>
+                        <p class="ps-4">80%</p>
+                        </div>
+                        <div id="bar1" class="barfiller">
+                            <span class="fill" data-percentage="80"></span>
+                        </div>
+                    </div>
+
+                    <!-- شريط واحد -->
+                    <div class="single_progress_bar">
+                        <div class="d-flex justify-content-between ps-5">
+                            <p>إدارة الحقول</p>
+                            <p class="ps-5 ms-3">70%</p>
+                        </div>
+                        <div id="bar2" class="barfiller">
+                            <span class="fill" data-percentage="70"></span>
+                        </div>
+                    </div>
+
+                    <!-- شريط واحد -->
+                    <div class="single_progress_bar">
+                        <div class="d-flex justify-content-between ps-5">
+                        <p>تصميم المناظر الطبيعية</p>
+                        <p class="ps-1">85%</p>
+                        </div>
+                        <div id="bar3" class="barfiller">
+                            <span class="fill" data-percentage="85"></span>
+                        </div>
+                    </div>
+
+                    <!-- شريط واحد -->
+                    <div class="single_progress_bar">
+                        <div class="d-flex justify-content-between ps-5">
+                        <p>العناية بالحدائق</p>
+                        <p class="ps-5 ms-5">65%</p>
+                        </div>
+                        <div id="bar4" class="barfiller">
+                            <span class="fill" data-percentage="65"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-6">
+                <div class="alazea-benefits-area">
+                    <div class="row">
+                        <!-- ميزة -->
+                        <div class="col-12 col-sm-6">
+                            <div class="single-benefits-area">
+                                <img src="img/core-img/b1.png" alt="">
+                                <h5>منتجات عالية الجودة</h5>
+                                <p>نستخدم أجود أنواع النباتات والمواد لضمان جودة تدوم طويلاً ومظهر طبيعي مميز.</p>
+                            </div>
+                        </div>
+
+                        <!-- ميزة -->
+                        <div class="col-12 col-sm-6">
+                            <div class="single-benefits-area">
+                                <img src="img/core-img/b2.png" alt="">
+                                <h5>خدمة مثالية</h5>
+                                <p>نهتم براحتك ونوفر خدمة عملاء مميزة لضمان تجربة استثنائية في كل خطوة.</p>
+                            </div>
+                        </div>
+
+                        <!-- ميزة -->
+                        <div class="col-12 col-sm-6">
+                            <div class="single-benefits-area">
+                                <img src="img/core-img/b3.png" alt="">
+                                <h5>طبيعي 100%</h5>
+                                <p>جميع منتجاتنا طبيعية بالكامل وصديقة للبيئة، لتجعل مساحتك أكثر نقاءً وجمالاً.</p>
+                            </div>
+                        </div>
+
+                        <!-- ميزة -->
+                        <div class="col-12 col-sm-6">
+                            <div class="single-benefits-area">
+                                <img src="img/core-img/b4.png" alt="">
+                                <h5>صديقة للبيئة</h5>
+                                <p>نلتزم باستخدام حلول مستدامة تحافظ على البيئة وتساهم في مستقبل أكثر خضرة.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="border-line"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- ##### About Area End ##### -->
+
+    <!-- ##### Portfolio Area Start ##### -->
+ <section class="alazea-portfolio-area section-padding-100-0" style="direction: rtl; text-align: right;">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <!-- عنوان القسم -->
+                <div class="section-heading text-center">
+                    <h2>معرض أعمالنا</h2>
+                    <p>نضع خبرتنا وجهودنا في ابتكار تصاميم فريدة وجذابة</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="alazea-portfolio-filter">
+                    <div class="portfolio-filter text-center">
+                        <button class="btn active" data-filter="*">الكل</button>
+                        <button class="btn" data-filter=".design">حدائق منزلية</button>
+                        <button class="btn" data-filter=".garden">نباتات الزينة</button>
+                        <button class="btn" data-filter=".home-design">ديكور نباتي </button>
+                        <button class="btn" data-filter=".office-design"> زينة مكتبية</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row alazea-portfolio">
+
+            <!-- مشروع 1 -->
+            <div class="col-12 col-sm-6 col-lg-3 single_portfolio_item design home-design wow fadeInUp" data-wow-delay="100ms">
+                <div class="portfolio-thumbnail bg-img" style="background-image: url(img/bg-img/16.jpg);"></div>
+                <div class="portfolio-hover-overlay">
+                    <a href="img/bg-img/16.jpg" class="portfolio-img d-flex align-items-center justify-content-center" title="المعرض 1">
+                        <div class="port-hover-text">
+                            <h3>متجر زهور عصري</h3>
+                            <h5>نباتات مكتبية</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- مشروع 2 -->
+            <div class="col-12 col-sm-6 col-lg-3 single_portfolio_item garden wow fadeInUp" data-wow-delay="200ms">
+                <div class="portfolio-thumbnail bg-img" style="background-image: url(img/bg-img/17.jpg);"></div>
+                <div class="portfolio-hover-overlay">
+                    <a href="img/bg-img/17.jpg" class="portfolio-img d-flex align-items-center justify-content-center" title="المعرض 2">
+                        <div class="port-hover-text">
+                            <h3>حديقة طبيعية متكاملة</h3>
+                            <h5>تصميم المناظر</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- مشروع 3 -->
+            <div class="col-12 col-sm-6 col-lg-3 single_portfolio_item garden design wow fadeInUp" data-wow-delay="300ms">
+                <div class="portfolio-thumbnail bg-img" style="background-image: url(img/bg-img/18.jpg);"></div>
+                <div class="portfolio-hover-overlay">
+                    <a href="img/bg-img/18.jpg" class="portfolio-img d-flex align-items-center justify-content-center" title="المعرض 3">
+                        <div class="port-hover-text">
+                            <h3>تصميم حديقة منزلية</h3>
+                            <h5>نباتات الزينة</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- مشروع 4 -->
+            <div class="col-12 col-sm-6 col-lg-3 single_portfolio_item garden office-design wow fadeInUp" data-wow-delay="400ms">
+                <div class="portfolio-thumbnail bg-img" style="background-image: url(img/bg-img/19.jpg);"></div>
+                <div class="portfolio-hover-overlay">
+                    <a href="img/bg-img/19.jpg" class="portfolio-img d-flex align-items-center justify-content-center" title="المعرض 4">
+                        <div class="port-hover-text">
+                            <h3>تصميم مكتب حديث</h3>
+                            <h5>نباتات داخلية</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- مشروع 5 -->
+            <div class="col-12 col-sm-6 col-lg-3 single_portfolio_item design office-design wow fadeInUp" data-wow-delay="100ms">
+                <div class="portfolio-thumbnail bg-img" style="background-image: url(img/bg-img/20.jpg);"></div>
+                <div class="portfolio-hover-overlay">
+                    <a href="img/bg-img/20.jpg" class="portfolio-img d-flex align-items-center justify-content-center" title="المعرض 5">
+                        <div class="port-hover-text">
+                            <h3>تصميم مقهى فاخر</h3>
+                            <h5>تصميم داخلي طبيعي</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- مشروع 6 -->
+            <div class="col-12 col-sm-6 col-lg-3 single_portfolio_item garden wow fadeInUp" data-wow-delay="200ms">
+                <div class="portfolio-thumbnail bg-img" style="background-image: url(img/bg-img/21.jpg);"></div>
+                <div class="portfolio-hover-overlay">
+                    <a href="img/bg-img/21.jpg" class="portfolio-img d-flex align-items-center justify-content-center" title="المعرض 6">
+                        <div class="port-hover-text">
+                            <h3>تصميم حديقة فاخرة</h3>
+                            <h5>نباتات طبيعية</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- مشروع 7 -->
+            <div class="col-12 col-lg-6 single_portfolio_item home-design wow fadeInUp" data-wow-delay="300ms">
+                <div class="portfolio-thumbnail bg-img" style="background-image: url(img/bg-img/22.jpg);"></div>
+                <div class="portfolio-hover-overlay">
+                    <a href="img/bg-img/22.jpg" class="portfolio-img d-flex align-items-center justify-content-center" title="المعرض 7">
+                        <div class="port-hover-text">
+                            <h3>تصميم منزل عصري</h3>
+                            <h5>زخرفة نباتية</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <!-- ##### Portfolio Area End ##### -->
+
+    <!-- ##### Testimonial Area Start ##### -->
+<section class="testimonial-area section-padding-100" style="direction: rtl; text-align: right;">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="testimonials-slides owl-carousel">
+
+                    <!-- رأي العميل الأول -->
+                    <div class="single-testimonial-slide">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-md-6">
+                                <div class="testimonial-thumb overflow-hidden">
+                                    <img src="img/bg-img/13.jpg" alt="رأي عميل">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="testimonial-content">
+                                    <!-- عنوان القسم -->
+                                    <div class="section-heading">
+                                        <h2>آراء عملائنا</h2>
+                                        <p>نحن لسنا مجرد متجر لمستلزمات نباتات ، بل نحن متخصصون في عالم النباتات والديكور الطبيعي 🌿</p>
+                                    </div>
+                                    <p>“بصراحة كانت تجربة رائعة جدًا! فريق <strong>الوكيل للنباتات</strong> ساعدني في تنسيق الزراعة في مكتبي بطريقة أنيقة ومريحة للنظر. ريحة النباتات والجو العام بقوا مريحين جدًا. شكرًا ليكم!”</p>
+                                    <div class="testimonial-author-info">
+                                        <h6>محمود حسن</h6>
+                                        <p>مهندس معماري – القاهرة</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- رأي العميل الثاني -->
+                    <div class="single-testimonial-slide">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-md-6">
+                                <div class="testimonial-thumb">
+                                    <img src="img/bg-img/14.jpg" alt="رأي عميلة">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="testimonial-content">
+                                    <div class="section-heading">
+                                        <h2>آراء عملائنا</h2>
+                                        <p>نحن متخصصون في النباتات الطبيعية والديكور الأخضر</p>
+                                    </div>
+                                    <p>“تعاملت مع <strong>الوكيل للنباتات</strong> لتزيين شرفة بيتي بالنباتات، والنتيجة كانت خرافية! الألوان مريحة والاهتمام بالتفاصيل واضح جدًا. دلوقتي الشرفة بقت مكاني المفضل للراحة.”</p>
+                                    <div class="testimonial-author-info">
+                                        <h6>سارة علي</h6>
+                                        <p>مصممة ديكور – الجيزة</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- رأي العميل الثالث -->
+                    <div class="single-testimonial-slide">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-md-6">
+                                <div class="testimonial-thumb">
+                                    <img src="img/bg-img/15.jpg" alt="رأي عميل">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="testimonial-content">
+                                    <div class="section-heading">
+                                        <h2>آراء عملائنا</h2>
+                                        <p>نؤمن أن الجمال يبدأ من لمسة طبيعية بسيطة</p>
+                                    </div>
+                                    <p>“خدمتهم ممتازة فعلًا! زرعوا في البيت نباتات داخلية تضيف حياة للمكان. فريق محترم جدًا، ملتزمين بالمواعيد، ومهتمين بأدق التفاصيل. أنصح أي حد بيحب الطبيعة يتعامل معاهم.”</p>
+                                    <div class="testimonial-author-info">
+                                        <h6>أحمد خالد</h6>
+                                        <p>صاحب كافيه – الإسكندرية</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- ##### Testimonial Area End ##### -->
+
+    <!-- ##### Product Area Start ##### -->
+<section class="new-arrivals-products-area bg-gray section-padding-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <!-- عنوان القسم -->
+                <div class="section-heading text-center">
+                    <h2>المنتجات الجديدة</h2>
+                    <p>لدينا أحدث المنتجات، بالتأكيد ستنال إعجابك</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <!-- منتج فردي -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="single-product-area mb-50 wow fadeInUp" data-wow-delay="100ms">
+                    <!-- صورة المنتج -->
+                    <div class="product-img">
+                        <a href="shop-details.html"><img style="max-height: 15rem;" src="img/bg-img/9.jpg" alt=""></a>
+                        <!-- وسم المنتج -->
+                        <div class="product-tag">
+                            <a href="#">رائج</a>
+                        </div>
+                        <div class="product-meta d-flex">
+                            <a href="#" class="wishlist-btn"><i class="icon_heart_alt"></i></a>
+                            <a href="cart.html" class="add-to-cart-btn">أضف إلى السلة</a>
+                            <a href="#" class="compare-btn"><i class="arrow_left-right_alt"></i></a>
+                        </div>
+                    </div>
+                    <!-- معلومات المنتج -->
+                    <div class="product-info mt-15 text-center">
+                        <a href="shop-details.html">
+                            <p>زهرة الصبار</p>
+                        </a>
+                        <h6>$10.99</h6>
+                    </div>
+                </div>
+            </div>
+
+            <!-- منتج فردي -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="single-product-area mb-50 wow fadeInUp" data-wow-delay="200ms">
+                    <!-- صورة المنتج -->
+                    <div class="product-img">
+                        <a href="shop-details.html"><img style="max-height: 15rem;" src="img/bg-img/10.jpg" alt=""></a>
+                        <div class="product-meta d-flex">
+                            <a href="#" class="wishlist-btn"><i class="icon_heart_alt"></i></a>
+                            <a href="cart.html" class="add-to-cart-btn">أضف إلى السلة</a>
+                            <a href="#" class="compare-btn"><i class="arrow_left-right_alt"></i></a>
+                        </div>
+                    </div>
+                    <!-- معلومات المنتج -->
+                    <div class="product-info mt-15 text-center">
+                        <a href="shop-details.html">
+                            <p>زهرة الصبار</p>
+                        </a>
+                        <h6>$10.99</h6>
+                    </div>
+                </div>
+            </div>
+
+            <!-- منتج فردي -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="single-product-area mb-50 wow fadeInUp" data-wow-delay="300ms">
+                    <!-- صورة المنتج -->
+                    <div class="product-img">
+                        <a href="shop-details.html"><img style="max-height: 15rem;" src="img/bg-img/11.jpg" alt=""></a>
+                        <div class="product-meta d-flex">
+                            <a href="#" class="wishlist-btn"><i class="icon_heart_alt"></i></a>
+                            <a href="cart.html" class="add-to-cart-btn">أضف إلى السلة</a>
+                            <a href="#" class="compare-btn"><i class="arrow_left-right_alt"></i></a>
+                        </div>
+                    </div>
+                    <!-- معلومات المنتج -->
+                    <div class="product-info mt-15 text-center">
+                        <a href="shop-details.html">
+                            <p>زهرة الصبار</p>
+                        </a>
+                        <h6>$10.99</h6>
+                    </div>
+                </div>
+            </div>
+
+            <!-- منتج فردي -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="single-product-area mb-50 wow fadeInUp" data-wow-delay="400ms">
+                    <!-- صورة المنتج -->
+                    <div class="product-img">
+                        <a href="shop-details.html"><img style="max-height: 15rem;" src="img/bg-img/12.jpg" alt=""></a>
+                        <!-- وسم المنتج -->
+                        <div class="product-tag sale-tag">
+                            <a href="#">رائج</a>
+                        </div>
+                        <div class="product-meta d-flex">
+                            <a href="#" class="wishlist-btn"><i class="icon_heart_alt"></i></a>
+                            <a href="cart.html" class="add-to-cart-btn">أضف إلى السلة</a>
+                            <a href="#" class="compare-btn"><i class="arrow_left-right_alt"></i></a>
+                        </div>
+                    </div>
+                    <!-- معلومات المنتج -->
+                    <div class="product-info mt-15 text-center">
+                        <a href="shop-details.html">
+                            <p>زهرة الصبار</p>
+                        </a>
+                        <h6>$10.99</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 text-center">
+                <a href="shop.html" class="btn btn-outline-success px-2 py-1">عرض الكل</a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <!-- ##### Product Area End ##### -->
+
+    <!-- ##### Blog Area Start ##### -->
+<section class="alazea-blog-area section-padding-100-0" style="padding: 100px 0 0 0; direction: rtl; text-align: right;">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <!-- عنوان القسم -->
+                <div class="section-heading text-center" style="text-align: center; margin-bottom: 50px;">
+                    <h2 style="font-size: 30px; font-weight: bold;">أحدث الأخبار</h2>
+                    <p style="color: #777;">آخر المستجدات عن النباتات والديكور الطبيعي في مصر</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+
+            <!-- مقالة مدونة -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="single-blog-post mb-100" style="margin-bottom: 100px;">
+                    <div class="post-thumbnail mb-30" style="margin-bottom: 30px; overflow: hidden; border-radius: 10px;">
+                        <a href="single-post.html"><img src="img/bg-img/6.jpg" alt="تصميم الحدائق" style="width: 100%; border-radius: 10px;"></a>
+                    </div>
+                    <div class="post-content" style="padding: 0 10px;">
+                        <a href="single-post.html" class="post-title" style="text-decoration: none; color: #333;">
+                            <h5 style="font-size: 18px; line-height: 1.6;">ترند جديد في تنسيق النباتات داخل المكاتب والشركات</h5>
+                        </a>
+                        <div class="post-meta" style="font-size: 14px; color: #777; margin: 10px 0;">
+                            <a href="#" style="color: #777; margin-left: 10px; text-decoration: none;"><i class="fa fa-clock-o" aria-hidden="true"></i> 5 نوفمبر 2025</a>
+                            <a href="#" style="color: #777; text-decoration: none;"><i class="fa fa-user" aria-hidden="true"></i> محمد عادل</a>
+                        </div>
+                        <p class="post-excerpt" style="color: #555; line-height: 1.8;">دلوقتي بقى في توجه كبير لاستخدام النباتات الطبيعية في المكاتب لأنها بتحسن المزاج وتزود الإنتاجية. اعرف ازاي تختار الأنواع المناسبة لمكان شغلك.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- مقالة مدونة -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="single-blog-post mb-100" style="margin-bottom: 100px;">
+                    <div class="post-thumbnail mb-30" style="margin-bottom: 30px; overflow: hidden; border-radius: 10px;">
+                        <a href="single-post.html"><img src="img/bg-img/7.jpg" alt="النباتات المنزلية" style="width: 100%; border-radius: 10px;"></a>
+                    </div>
+                    <div class="post-content" style="padding: 0 10px;">
+                        <a href="single-post.html" class="post-title" style="text-decoration: none; color: #333;">
+                            <h5 style="font-size: 18px; line-height: 1.6;">أنواع نباتات تتحمل الجو المصري بدون مجهود</h5>
+                        </a>
+                        <div class="post-meta" style="font-size: 14px; color: #777; margin: 10px 0;">
+                            <a href="#" style="color: #777; margin-left: 10px; text-decoration: none;"><i class="fa fa-clock-o" aria-hidden="true"></i> 12 نوفمبر 2025</a>
+                            <a href="#" style="color: #777; text-decoration: none;"><i class="fa fa-user" aria-hidden="true"></i> ندى محمود</a>
+                        </div>
+                        <p class="post-excerpt" style="color: #555; line-height: 1.8;">لو مش عندك وقت تسقي كل يوم، المقال ده ليك! جمعنالك نباتات تعيش في الحر والرطوبة من غير تعب، وتفضل شكلها جميل طول السنة.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- مقالة مدونة -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="single-blog-post mb-100" style="margin-bottom: 100px;">
+                    <div class="post-thumbnail mb-30" style="margin-bottom: 30px; overflow: hidden; border-radius: 10px;">
+                        <a href="single-post.html"><img src="img/bg-img/8.jpg" alt="العناية بالنباتات" style="width: 100%; border-radius: 10px;"></a>
+                    </div>
+                    <div class="post-content" style="padding: 0 10px;">
+                        <a href="single-post.html" class="post-title" style="text-decoration: none; color: #333;">
+                            <h5 style="font-size: 18px; line-height: 1.6;">إزاي تعتني بنباتاتك في الشتاء وتحافظ عليها خضرا</h5>
+                        </a>
+                        <div class="post-meta" style="font-size: 14px; color: #777; margin: 10px 0;">
+                            <a href="#" style="color: #777; margin-left: 10px; text-decoration: none;"><i class="fa fa-clock-o" aria-hidden="true"></i> 28 نوفمبر 2025</a>
+                            <a href="#" style="color: #777; text-decoration: none;"><i class="fa fa-user" aria-hidden="true"></i> كريم سمير</a>
+                        </div>
+                        <p class="post-excerpt" style="color: #555; line-height: 1.8;">الجو البارد ممكن يأثر على نباتات البيت، بس بخطوات بسيطة تقدر تحافظ عليها صحية. هنا بنقولك إزاي تتعامل مع البرد والرطوبة.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+    <!-- ##### Blog Area End ##### -->
+
+    <!-- ##### Contact Area Start ##### -->
+<section class="subscribe-newsletter-area py-5" 
+    style="background-image: url('img/bg-img/subscribe.png'); 
+           background-size: cover; 
+           background-position: center; 
+           direction: rtl; 
+           text-align: right; 
+           position: relative; 
+           overflow: hidden;">
+    <div class="container">
+        <div class="row align-items-center justify-content-between">
+            
+            <!-- النص -->
+            <div class="col-12 col-lg-5 mb-4 mb-lg-0">
+                <div class="section-heading mb-0">
+                    <h2 style="font-weight: 700; color: #2c3e50;">انضم إلى نشرتنا الإخبارية</h2>
+                    <p style="color: #555; line-height: 1.8;">
+                        اشترك معنا لتصلك أحدث الأخبار والعروض المميزة، 
+                        واحصل على <strong style="color:#27ae60;">خصم 10%</strong> على أول عملية شراء لك 🌿
+                    </p>
+                </div>
+            </div>
+
+            <!-- فورم الاشتراك -->
+            <div class="col-12 col-lg-6">
+                <form action="#" method="get" 
+                      class="d-flex flex-column flex-md-row gap-2 justify-content-end align-items-center">
+                    <input type="email" 
+                           name="subscribe-email" 
+                           id="subscribeEmail" 
+                           placeholder="أدخل بريدك الإلكتروني" 
+                           required
+                           class="form-control w-100 w-md-auto"
+                           style="max-width: 400px; border-radius: 50px; padding: 10px 20px; border: 1px solid #ccc;">
+                    
+                    <button type="submit" 
+                            class="btn btn-success px-4 py-2" 
+                            style="border-radius: 50px; font-weight: 600;">
+                        اشترك الآن
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- صورة جانبية -->
+    <div class="subscribe-side-thumb wow fadeInUp d-none d-lg-block" data-wow-delay="0.5s"
+         style="position: absolute; bottom: 0; left: 0; transform: translateY(20%);">
+        <img src="img/core-img/leaf.png" alt="ورقة ديكور" style="width: 150px; opacity: 0.8;">
+    </div>
+</section>
+
+
+    <!-- ##### Contact Area End ##### -->
+
+    <!-- ##### Footer Area Start ##### -->
+<footer class="footer-area bg-img text-white" 
+        style="background-image: url('img/bg-img/3.jpg'); background-size: cover; background-position: center; direction: rtl; text-align: right;">
+
+    <!-- المنطقة الرئيسية للفوتر -->
+    <div class="main-footer-area py-5" style="background: rgba(0,0,0,0.6);">
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- ويدجت الفوتر الأولى -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-footer-widget">
+                        <div class="footer-logo mb-3 text-center">
+                            <a href="#"><img src="img/core-img/mylogo.png" alt="شعار الموقع" style="max-width: 12rem"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- روابط سريعة -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-footer-widget">
+                        <h5 class="mb-3 fw-bold">روابط سريعة</h5>
+                        <ul class="list-unstyled" style="line-height: 2;">
+                            <li><a href="#" class="text-white text-decoration-none">الرئيسية</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">خدماتنا</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">منتجاتنا</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">معرض الصور</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">اتصل بنا</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- المنتجات الأكثر مبيعًا -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-footer-widget">
+                        <h5 class="mb-3 fw-bold">الأكثر مبيعًا</h5>
+
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="img/bg-img/4.jpg" alt="منتج" style="width: 60px; height: 60px; border-radius: 6px; margin-left: 10px;">
+                            <div>
+                                <a href="#" class="text-white text-decoration-none d-block">نبتة الصبار</a>
+                                <small class="text-success">$9.99</small>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center">
+                            <img src="img/bg-img/5.jpg" alt="منتج" style="width: 60px; height: 60px; border-radius: 6px; margin-left: 10px;">
+                            <div>
+                                <a href="#" class="text-white text-decoration-none d-block">زهرة التوليب</a>
+                                <small class="text-success">$11.99</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- معلومات الاتصال -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-footer-widget">
+                        <h5 class="mb-3 fw-bold">تواصل معنا</h5>
+                        <ul class="list-unstyled" style="line-height: 2;">
+                            <li><i class="fas fa-map-marker-alt text-success ms-2"></i> القليوبية – طريق شبين القناطر - امام المعهد الديني</li>
+                            <li><i class="fas fa-phone-alt text-success ms-2"></i> +20 100 073 1991</li>
+                            <li><i class="fas fa-envelope text-success ms-2"></i> alwkeel6524@gmail.com</li>
+                            <li><i class="fas fa-clock text-success ms-2"></i> يوميًا من 9 صباحًا حتى 9 مساءً</li>
+                        </ul>
+                    </div>
+                </div>
+        <div class="text-center single-footer-widget">
+                <p style="font-size: 15px; line-height: 1.8;">
+                           نحن مركز متخصص في مستلزمات الحدائق والمشاتل، نقدم نباتات طبيعية، أدوات زراعة، وأنظمة ري حديثة
+                            <br>لمساعدتك على إنشاء حديقة منزلية جميلة ومريحة.
+                        </p>
+                        <div class="social-info mt-3 text-center">
+                            <a href="#" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-white mx-2"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#" class="text-white mx-2"><i class="fab fa-youtube"></i></a>
+                        </div>
+            </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- المنطقة السفلية للفوتر -->
+    <div class="footer-bottom-area text-center py-3" style="background: rgba(0,0,0,0.8); font-size: 14px;">
+        <div class="container">
+            <p class="mb-0">جميع الحقوق محفوظة © 2025 <span class="text-success fw-bold">مركز مستلزمات الحدائق والمشاتل</span></p>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- ##### Footer Area End ##### -->
+
+    <!-- ##### All Javascript Files ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+</body>
+
+</html>
