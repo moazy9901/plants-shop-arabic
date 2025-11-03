@@ -2541,9 +2541,15 @@ img {
   position: relative;
   z-index: 1;
   box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.15); }
-  @media only screen and (max-width: 767px) {
+  @media all and (max-width: 767px) {
     .contact--thumbnail {
-      margin-bottom: 100px; } }
+      margin-bottom: 100px; } 
+    .classy-menu {
+  overflow: hidden !important;
+  padding: 10px 0;
+  max-width: 50% !important;
+}
+    }
 
 /* :: 24.0 Portfolio Details Area CSS */
 .portfolio-details-area {
