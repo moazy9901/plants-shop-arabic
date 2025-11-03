@@ -2544,10 +2544,14 @@ img {
   @media all and (max-width: 767px) {
     .contact--thumbnail {
       margin-bottom: 100px; } 
+      
     .classy-menu {
   overflow: hidden !important;
   padding: 10px 0;
   max-width: 50% !important;
+}
+.single-benefits-area , .testimonial-content , .post-content , .subscribe-newsletter-area , .footer-area .main-footer-area , .footer-area .footer-bottom-area , .breadcrumb-area .breadcrumb , .single-blog-post , .pagination , .comment_area , .leave-comment-area , .post-sidebar-area , .single-post-details-area , .post-tags-share , .contact-form-area , .contact-information {
+  text-align: center !important;
 }
     }
 
