@@ -154,69 +154,66 @@
     <!-- ##### Breadcrumb Area End ##### -->
 
     <!-- ##### Checkout Area Start ##### -->
-<div class="checkout_area mb-100">
+<section class="checkout_area mb-100" style="direction: rtl; font-family: 'Cairo', sans-serif;">
     <div class="container">
         <div class="row justify-content-between">
 
             <!-- بيانات الفوترة -->
-            <div class="col-12 col-lg-7">
-                <div class="checkout_details_area clearfix">
-                    <h5>بيانات الفوترة</h5>
+            <div class="col-12 col-lg-7 mb-5">
+                <div class="checkout_details_area p-4 shadow rounded bg-white">
+                    <h4 class="mb-4 text-success">🧾 بيانات الفوترة</h4>
                     <form action="#" method="post">
                         <div class="row">
-                            <div class="col-md-6 mb-4">
-                                <label for="first_name">الاسم الأول *</label>
-                                <input type="text" class="form-control" id="first_name" required>
+                            <div class="col-md-6 mb-3">
+                                <label for="first_name">الاسم الأول <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control border-success" id="first_name" placeholder="أدخل اسمك الأول" required>
                             </div>
-                            <div class="col-md-6 mb-4">
-                                <label for="last_name">اسم العائلة *</label>
-                                <input type="text" class="form-control" id="last_name" required>
+                            <div class="col-md-6 mb-3">
+                                <label for="last_name">اسم العائلة <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control border-success" id="last_name" placeholder="أدخل اسم العائلة" required>
                             </div>
-                            <div class="col-12 mb-4">
-                                <label for="email_address">البريد الإلكتروني *</label>
-                                <input type="email" class="form-control" id="email_address" required>
+                            <div class="col-12 mb-3">
+                                <label for="email_address">البريد الإلكتروني <span class="text-danger">*</span></label>
+                                <input type="email" class="form-control border-success" id="email_address" placeholder="example@email.com" required>
                             </div>
-                            <div class="col-12 mb-4">
-                                <label for="phone_number">رقم الهاتف *</label>
-                                <input type="tel" class="form-control" id="phone_number" required>
+                            <div class="col-12 mb-3">
+                                <label for="phone_number">رقم الهاتف <span class="text-danger">*</span></label>
+                                <input type="tel" class="form-control border-success" id="phone_number" placeholder="01000000000" required>
                             </div>
-                            <div class="col-12 mb-4">
-                                <label for="company_name">اسم الشركة</label>
-                                <input type="text" class="form-control" id="company_name">
+                            <div class="col-12 mb-3">
+                                <label for="company_name">اسم الشركة (اختياري)</label>
+                                <input type="text" class="form-control border-success" id="company_name" placeholder="إن وجد">
                             </div>
-                            <div class="col-12 mb-4">
-                                <label for="address">العنوان *</label>
-                                <input type="text" class="form-control" id="address" required>
+                            <div class="col-12 mb-3">
+                                <label for="address">العنوان الكامل <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control border-success" id="address" placeholder="أدخل عنوان التوصيل" required>
                             </div>
-                            <div class="col-md-6 mb-4">
-                                <label for="city">المدينة *</label>
-                                <input type="text" class="form-control" id="city" required>
+                            <div class="col-md-6 mb-3">
+                                <label for="city">المدينة <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control border-success" id="city" placeholder="مثلاً: شبين القناطر" required>
                             </div>
-                            <div class="col-md-6 mb-4">
-                                <label for="state">المحافظة/الولاية *</label>
-                                <input type="text" class="form-control" id="state" required>
+                            <div class="col-md-6 mb-3">
+                                <label for="state">المحافظة <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control border-success" id="state" placeholder="القليوبية" required>
                             </div>
-                            <div class="col-md-6 mb-4">
-                                <label for="country">الدولة *</label>
-                                <select class="custom-select d-block w-100" id="country" required>
+                            <div class="col-md-6 mb-3">
+                                <label for="country">الدولة <span class="text-danger">*</span></label>
+                                <select class="form-select border-success" id="country" required>
                                     <option value="">اختر الدولة</option>
                                     <option value="egy">مصر</option>
                                     <option value="ksa">المملكة العربية السعودية</option>
-                                    <option value="uae">الإمارات</option>
-                                    <option value="uk">المملكة المتحدة</option>
-                                    <option value="usa">الولايات المتحدة</option>
-                                    <option value="ind">الهند</option>
-                                    <option value="ger">ألمانيا</option>
-                                    <option value="fra">فرنسا</option>
+                                    <option value="uae">الإمارات العربية المتحدة</option>
+                                    <option value="kuw">الكويت</option>
+                                    <option value="jor">الأردن</option>
                                 </select>
                             </div>
-                            <div class="col-md-6 mb-4">
+                            <div class="col-md-6 mb-3">
                                 <label for="postcode">الرمز البريدي</label>
-                                <input type="text" class="form-control" id="postcode">
+                                <input type="text" class="form-control border-success" id="postcode" placeholder="مثلاً: 13756">
                             </div>
-                            <div class="col-12 mb-4">
-                                <label for="order-notes">ملاحظات الطلب</label>
-                                <textarea class="form-control" id="order-notes" cols="30" rows="5" placeholder="ملاحظات حول طلبك، مثل تعليمات خاصة بالتوصيل."></textarea>
+                            <div class="col-12 mb-3">
+                                <label for="order-notes">ملاحظات إضافية</label>
+                                <textarea class="form-control border-success" id="order-notes" rows="4" placeholder="أدخل أي ملاحظات حول الطلب أو تعليمات خاصة بالتوصيل"></textarea>
                             </div>
                         </div>
                     </form>
@@ -225,38 +222,46 @@
 
             <!-- ملخص الطلب -->
             <div class="col-12 col-lg-4">
-                <div class="checkout-content">
-                    <h5 class="title--">طلبك</h5>
-                    <div class="products">
-                        <div class="products-data">
-                            <h5>المنتجات:</h5>
-                            <div class="single-products d-flex justify-content-between align-items-center">
-                                <p>زهرة الصبار</p>
-                                <h5>$9.99</h5>
-                            </div>
+                <div class="checkout-content shadow rounded bg-white p-4">
+                    <h4 class="mb-4 text-success text-center">🛒 ملخص الطلب</h4>
+
+                    <div class="products mb-3">
+                        <h6 class="text-muted mb-3">المنتجات:</h6>
+
+                        <div class="single-products d-flex justify-content-between align-items-center border-bottom py-2">
+                            <p class="mb-0">زهرة الصبار</p>
+                            <h6 class="text-success mb-0">$9.99</h6>
+                        </div>
+
+                        <div class="single-products d-flex justify-content-between align-items-center border-bottom py-2">
+                            <p class="mb-0">بذور الخزامى</p>
+                            <h6 class="text-success mb-0">$6.50</h6>
                         </div>
                     </div>
-                    <div class="subtotal d-flex justify-content-between align-items-center">
-                        <h5>الإجمالي الفرعي</h5>
-                        <h5>$9.99</h5>
+
+                    <div class="subtotal d-flex justify-content-between align-items-center border-top pt-3">
+                        <h6>الإجمالي الفرعي</h6>
+                        <h6>$16.49</h6>
                     </div>
-                    <div class="shipping d-flex justify-content-between align-items-center">
-                        <h5>الشحن</h5>
-                        <h5>$3.00</h5>
+                    <div class="shipping d-flex justify-content-between align-items-center mt-2">
+                        <h6>الشحن</h6>
+                        <h6>$3.00</h6>
                     </div>
-                    <div class="order-total d-flex justify-content-between align-items-center">
-                        <h5>إجمالي الطلب</h5>
-                        <h5>$12.99</h5>
+                    <div class="order-total d-flex justify-content-between align-items-center mt-3 border-top pt-3">
+                        <h5 class="fw-bold">إجمالي الطلب</h5>
+                        <h5 class="text-success fw-bold">$19.49</h5>
                     </div>
-                    <div class="checkout-btn mt-30 text-center">
-                        <a href="#" class="btn btn-outline-success w-50 mx-auto">تأكيد الطلب</a>
+
+                    <div class="checkout-btn mt-4 text-center">
+                        <a href="#" class="btn btn-success px-4 py-2 w-75" style="border-radius: 25px;">تأكيد الطلب</a>
                     </div>
                 </div>
             </div>
 
         </div>
     </div>
-</div>
+</section>
+
 
     <!-- ##### Checkout Area End ##### -->
 

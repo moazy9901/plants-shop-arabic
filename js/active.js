@@ -92,7 +92,7 @@
     // :: 6.0 magnificPopup Active Code
     if ($.fn.magnificPopup) {
     // تقييد عدد العناصر إلى 7 فقط
-    const limitedItems = $('.portfolio-img, .product-img').slice(0, 7);
+    const limitedItems = $('.portfolio-img').slice(0, 7);
 
     limitedItems.magnificPopup({
         gallery: {
