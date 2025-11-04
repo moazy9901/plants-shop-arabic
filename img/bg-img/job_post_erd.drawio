@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mxfile host="app.diagrams.net" modified="2025-11-03T00:00:00.000Z" agent="python-doc-generator" version="24.7.8" type="device">
+  <diagram id="erd-min" name="ERD (Minimal Core)">
+    <mxGraphModel dx="1600" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" page="1" pageScale="1" pageWidth="2000" pageHeight="1400" background="#FFFFFF">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="ent-User" value="User" style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="120" width="220" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="ent-Category" value="Category" style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="60" width="220" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="ent-Technology" value="Technology" style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="260" width="220" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="ent-Job" value="Job" style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="760" y="120" width="260" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="ent-JobTechnology" value="JobTechnology" style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="760" y="300" width="220" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="ent-Application" value="Application" style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="120" width="260" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="att-★ id-20-80" value="★ id" style="shape=ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="20" y="80" width="160" height="44" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_u1" source="att-★ id-20-80" target="ent-User" edge="1" parent="1" style="endArrow=none;html=1;strokeColor=#000000;rounded=0;">
+          <mxGeometry as="geometry"/>
+        </mxCell>
+        <mxCell id="att-email (unique)-20-50" value="email (unique)" style="shape=ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="20" y="50" width="160" height="44" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_u2" source="att-email (unique)-20-50" target="ent-User" edge="1" parent="1" style="endArrow=none;html=1;strokeColor=#000000;rounded=0;">
+          <mxGeometry as="geometry"/>
+        </mxCell>
+        <mxCell id="att-password-20-200" value="password" style="shape=ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="20" y="200" width="160" height="44" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_u3" source="att-password-20-200" target="ent-User" edge="1" parent="1" style="endArrow=none;html=1;strokeColor=#000000;rounded=0;">
+          <mxGeometry as="geometry"/>
+        </mxCell>
+        <mxCell id="att-role {admin|employer|candidate}-20-230" value="role {admin|employer|candidate}" style="shape=ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="20" y="230" width="160" height="44" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_u4" source="att-role {admin|employer|candidate}-20-230" target="ent-User" edge="1" parent="1" style="endArrow=none;html=1;strokeColor=#000000;rounded=0;">
+          <mxGeometry as="geometry"/>
+        </mxCell>
+        <mxCell id="att-★ id-380-20" value="★ id" style="shape=ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="380" y="20" width="160" height="44" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_c1" source="att-★ id-380-20" target="ent-Category" edge="1" parent="1" style="endArrow=none;html=1;strokeColor=#000000;rounded=0;">
+          <mxGeometry as="geometry"/>
+        </mxCell>
+        <mxCell id="att-name-340--10" value="name" style="shape=ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="340" y="-10" width="160" height="44" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_c2" source="att-name-340--10" target="ent-Category" edge="1" parent="1" style="endArrow=none;html=1;strokeColor=#000000;rounded=0;">
+          <mxGeometry as="geometry"/>
+        </mxCell>
+        <mxCell id="att-★ id-380-220" value="★ id" style="shape=ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="380" y="220" width="160" height="44" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_t1" source="att-★ id-380-220" target="ent-Technology" edge="1" parent="1" style="endArrow=none;html=1;strokeColor=#000000;rounded=0;">
+          <mxGeometry as="geometry"/>
+        </mxCell>
+        <mxCell id="att-name-340-190" value="name" style="shape=ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="340" y="190" width="160" height="44" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_t2" source="att-name-340-190" target="ent-Technology" edge="1" parent="1" style="endArrow=none;html=1;strokeColor=#000000;rounded=0;">
+          <mxGeometry as="geometry"/>
+        </mxCell>
+        <mxCell id="att-★ id-720-80" value="★ id" style="shape=ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="720" y="80" width="160" height="44" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_j1" source="att-★ id-720-80" target="ent-Job" edge="1" parent="1" style="endArrow=none;html=1;strokeColor=#000000;rounded=0;">
+          <mxGeometry as="geometry"/>
+        </mxCell>
+        <mxCell id="att-⌁ employer_user_id → User.id-680-50" value="⌁ employer_user_id → User.id" style="shape=ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="680" y="50" width="160" height="44" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_j2" source="att-⌁ employer_user_id → User.id-680-50" target="ent-Job" edge="1" parent="1" style="endArrow=none;html=1;strokeColor=#000000;rounded=0;">
+          <mxGeometry as="geometry"/>
+        </mxCell>
+        <mxCell id="att-⌁ category_id → Category.id-680-170" value="⌁ category_id → Category.id" style="shape=ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="680" y="170" width="160" height="44" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_j3" source="att-⌁ category_id → Category.id-680-170" target="ent-Job" edge="1" parent="1" style="endArrow=none;html=1;strokeColor=#000000;rounded=0;">
+          <mxGeometry as="geometry"/>
+        </mxCell>
+        <mxCell id="att-title-680-200" value="title" style="shape=ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="680" y="200" width="160" height="44" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_j4" source="att-title-680-200" target="ent-Job" edge="1" parent="1" style="endArrow=none;html=1;strokeColor=#000000;rounded=0;">
+          <mxGeometry as="geometry"/>
+        </mxCell>
+        <mxCell id="att-description-680-230" value="description" style="shape=ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="680" y="230" width="160" height="44" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_j5" source="att-description-680-230" target="ent-Job" edge="1" parent="1" style="endArrow=none;html=1;strokeColor=#000000;rounded=0;">
+          <mxGeometry as="geometry"/>
+        </mxCell>
+        <mxCell id="att-responsibilities-680-260" value="responsibilities" style="shape=ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="680" y="260" width="160" height="44" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_j6" source="att-responsibilities-680-260" target="ent-Job" edge="1" parent="1" style="endArrow=none;html=1;strokeColor=#000000;rounded=0;">
+          <mxGeometry as="geometry"/>
+        </mxCell>
+        <mxCell id="att-salary_min-940-200" value="salary_min" style="shape=ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="940" y="200" width="160" height="44" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_j7" source="att-salary_min-940-200" target="ent-Job" edge="1" parent="1" style="endArrow=none;html=1;strokeColor=#000000;rounded=0;">
+          <mxGeometry as="geometry"/>
+        </mxCell>
+        <mxCell id="att-salary_max-940-230" value="salary_max" style="shape=ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="940" y="230" width="160" height="44" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_j8" source="att-salary_max-940-230" target="ent-Job" edge="1" parent="1" style="endArrow=none;html=1;strokeColor=#000000;rounded=0;">
+          <mxGeometry as="geometry"/>
+        </mxCell>
+        <mxCell id="att-location-940-260" value="location" style="shape=ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="940" y="260" width="160" height="44" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_j9" source="att-location-940-260" target="ent-Job" edge="1" parent="1" style="endArrow=none;html=1;strokeColor=#000000;rounded=0;">
+          <mxGeometry as="geometry"/>
+        </mxCell>
+        <mxCell id="att-work_type {remote|onsite|hybrid}-940-290" value="work_type {remote|onsite|hybrid}" style="shape=ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="940" y="290" width="160" height="44" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_j10" source="att-work_type {remote|onsite|hybrid}-940-290" target="ent-Job" edge="1" parent="1" style="endArrow=none;html=1;strokeColor=#000000;rounded=0;">
+          <mxGeometry as="geometry"/>
+        </mxCell>
+        <mxCell id="att-status {draft|pending|approved|rejected|closed}-940-320" value="status {draft|pending|approved|rejected|closed}" style="shape=ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="940" y="320" width="160" height="44" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_j11" source="att-status {draft|pending|approved|rejected|closed}-940-320" target="ent-Job" edge="1" parent="1" style="endArrow=none;html=1;strokeColor=#000000;rounded=0;">
+          <mxGeometry as="geometry"/>
+        </mxCell>
+        <mxCell id="att-deadline (optional)-940-350" value="deadline (optional)" style="shape=ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="940" y="350" width="160" height="44" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_j12" source="att-deadline (optional)-940-350" target="ent-Job" edge="1" parent="1" style="endArrow=none;html=1;strokeColor=#000000;rounded=0;">
+          <mxGeometry as="geometry"/>
+        </mxCell>
+        <mxCell id="att-★ job_id-720-260" value="★ job_id" style="shape=ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="720" y="260" width="160" height="44" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_jt1" source="att-★ job_id-720-260" target="ent-JobTechnology" edge="1" parent="1" style="endArrow=none;html=1;strokeColor=#000000;rounded=0;">
+          <mxGeometry as="geometry"/>
+        </mxCell>
+        <mxCell id="att-★ technology_id-680-290" value="★ technology_id" style="shape=ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="680" y="290" width="160" height="44" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_jt2" source="att-★ technology_id-680-290" target="ent-JobTechnology" edge="1" parent="1" style="endArrow=none;html=1;strokeColor=#000000;rounded=0;">
+          <mxGeometry as="geometry"/>
+        </mxCell>
+        <mxCell id="att-★ id-1080-80" value="★ id" style="shape=ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="80" width="160" height="44" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_a1" source="att-★ id-1080-80" target="ent-Application" edge="1" parent="1" style="endArrow=none;html=1;strokeColor=#000000;rounded=0;">
+          <mxGeometry as="geometry"/>
+        </mxCell>
+        <mxCell id="att-⌁ job_id → Job.id-1040-50" value="⌁ job_id → Job.id" style="shape=ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="50" width="160" height="44" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_a2" source="att-⌁ job_id → Job.id-1040-50" target="ent-Application" edge="1" parent="1" style="endArrow=none;html=1;strokeColor=#000000;rounded=0;">
+          <mxGeometry as="geometry"/>
+        </mxCell>
+        <mxCell id="att-⌁ candidate_user_id → User.id-1320-80" value="⌁ candidate_user_id → User.id" style="shape=ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1320" y="80" width="160" height="44" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_a3" source="att-⌁ candidate_user_id → User.id-1320-80" target="ent-Application" edge="1" parent="1" style="endArrow=none;html=1;strokeColor=#000000;rounded=0;">
+          <mxGeometry as="geometry"/>
+        </mxCell>
+        <mxCell id="att-resume_path-1320-50" value="resume_path" style="shape=ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1320" y="50" width="160" height="44" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_a4" source="att-resume_path-1320-50" target="ent-Application" edge="1" parent="1" style="endArrow=none;html=1;strokeColor=#000000;rounded=0;">
+          <mxGeometry as="geometry"/>
+        </mxCell>
+        <mxCell id="att-name-1320-110" value="name" style="shape=ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1320" y="110" width="160" height="44" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_a5" source="att-name-1320-110" target="ent-Application" edge="1" parent="1" style="endArrow=none;html=1;strokeColor=#000000;rounded=0;">
+          <mxGeometry as="geometry"/>
+        </mxCell>
+        <mxCell id="att-email-1320-140" value="email" style="shape=ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1320" y="140" width="160" height="44" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_a6" source="att-email-1320-140" target="ent-Application" edge="1" parent="1" style="endArrow=none;html=1;strokeColor=#000000;rounded=0;">
+          <mxGeometry as="geometry"/>
+        </mxCell>
+        <mxCell id="att-phone-1320-170" value="phone" style="shape=ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1320" y="170" width="160" height="44" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_a7" source="att-phone-1320-170" target="ent-Application" edge="1" parent="1" style="endArrow=none;html=1;strokeColor=#000000;rounded=0;">
+          <mxGeometry as="geometry"/>
+        </mxCell>
+        <mxCell id="att-status {submitted|accepted|rejected|withdrawn}-1320-200" value="status {submitted|accepted|rejected|withdrawn}" style="shape=ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1320" y="200" width="160" height="44" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_a8" source="att-status {submitted|accepted|rejected|withdrawn}-1320-200" target="ent-Application" edge="1" parent="1" style="endArrow=none;html=1;strokeColor=#000000;rounded=0;">
+          <mxGeometry as="geometry"/>
+        </mxCell>
+        <mxCell id="rel-Posts" value="Posts" style="shape=rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="120" width="130" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="edge-Posts-a" source="ent-User" target="rel-Posts" edge="1" parent="1" style="endArrow=none;html=1;strokeColor=#000000;rounded=0;" value="1">
+          <mxGeometry as="geometry"/>
+        </mxCell>
+        <mxCell id="edge-Posts-b" source="rel-Posts" target="ent-Job" edge="1" parent="1" style="endArrow=none;html=1;strokeColor=#000000;rounded=0;" value="N">
+          <mxGeometry as="geometry"/>
+        </mxCell>
+        <mxCell id="rel-Categorizes" value="Categorizes" style="shape=rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="80" width="130" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="edge-Categorizes-a" source="ent-Category" target="rel-Categorizes" edge="1" parent="1" style="endArrow=none;html=1;strokeColor=#000000;rounded=0;" value="1">
+          <mxGeometry as="geometry"/>
+        </mxCell>
+        <mxCell id="edge-Categorizes-b" source="rel-Categorizes" target="ent-Job" edge="1" parent="1" style="endArrow=none;html=1;strokeColor=#000000;rounded=0;" value="N">
+          <mxGeometry as="geometry"/>
+        </mxCell>
+        <mxCell id="rel-Requires" value="Requires" style="shape=rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="900" y="300" width="130" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="edge-req-a" source="ent-Job" target="rel-Requires" edge="1" parent="1" style="endArrow=none;html=1;strokeColor=#000000;rounded=0;" value="1">
+          <mxGeometry as="geometry"/>
+        </mxCell>
+        <mxCell id="edge-req-b" source="rel-Requires" target="ent-JobTechnology" edge="1" parent="1" style="endArrow=none;html=1;strokeColor=#000000;rounded=0;" value="N">
+          <mxGeometry as="geometry"/>
+        </mxCell>
+        <mxCell id="edge-req-c" source="rel-Requires" target="ent-Technology" edge="1" parent="1" style="endArrow=none;html=1;strokeColor=#000000;rounded=0;" value="N">
+          <mxGeometry as="geometry"/>
+        </mxCell>
+        <mxCell id="rel-Receives" value="Receives" style="shape=rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="120" width="130" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="edge-Receives-a" source="ent-Job" target="rel-Receives" edge="1" parent="1" style="endArrow=none;html=1;strokeColor=#000000;rounded=0;" value="1">
+          <mxGeometry as="geometry"/>
+        </mxCell>
+        <mxCell id="edge-Receives-b" source="rel-Receives" target="ent-Application" edge="1" parent="1" style="endArrow=none;html=1;strokeColor=#000000;rounded=0;" value="N">
+          <mxGeometry as="geometry"/>
+        </mxCell>
+        <mxCell id="rel-Submits" value="Submits" style="shape=rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1240" y="120" width="130" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="edge-Submits-a" source="ent-User" target="rel-Submits" edge="1" parent="1" style="endArrow=none;html=1;strokeColor=#000000;rounded=0;" value="1">
+          <mxGeometry as="geometry"/>
+        </mxCell>
+        <mxCell id="edge-Submits-b" source="rel-Submits" target="ent-Application" edge="1" parent="1" style="endArrow=none;html=1;strokeColor=#000000;rounded=0;" value="N">
+          <mxGeometry as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
